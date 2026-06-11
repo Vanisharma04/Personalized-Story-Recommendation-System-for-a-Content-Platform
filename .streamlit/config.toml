@@ -1,0 +1,12 @@
+# Editorial "fine library" theme — warm ivory paper, antique gold, deep ink.
+# Heavy styling lives in dashboard/app.py CSS; this keeps widget chrome on-palette.
+[theme]
+base = "light"
+primaryColor = "#b08d4e"
+backgroundColor = "#f7f2e9"
+secondaryBackgroundColor = "#efe7d6"
+textColor = "#2a2118"
+font = "serif"
+
+[server]
+headless = true

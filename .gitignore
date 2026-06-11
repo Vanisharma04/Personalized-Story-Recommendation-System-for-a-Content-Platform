@@ -1,0 +1,26 @@
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# --- Generated artifacts (recreate with: python pipeline.py) ---
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+models/*
+!models/.gitkeep
+faiss_index/*
+!faiss_index/.gitkeep
+reports/*
+!reports/.gitkeep
+
+# --- Experiment tracking ---
+mlflow.db
+mlruns/
+
+# --- OS ---
+.DS_Store

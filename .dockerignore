@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.git/
+mlflow.db
+mlruns/
+data/processed/
+models/
+faiss_index/
+reports/
+notebooks/.ipynb_checkpoints/
