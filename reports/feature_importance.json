@@ -1,0 +1,14 @@
+{
+  "sim_score": 2949.0,
+  "genre_match": 124.0,
+  "genre_affinity": 2391.0,
+  "author_affinity": 741.0,
+  "story_popularity": 2495.0,
+  "story_avg_completion": 2217.0,
+  "story_reading_minutes": 2342.0,
+  "story_freshness": 2349.0,
+  "user_n_reads": 2414.0,
+  "user_avg_completion": 2149.0,
+  "user_like_rate": 2201.0,
+  "user_avg_session": 2428.0
+}

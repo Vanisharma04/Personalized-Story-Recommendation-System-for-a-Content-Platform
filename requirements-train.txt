@@ -1,0 +1,9 @@
+# Training dependencies — needed to run the pipeline (python pipeline.py):
+# story embeddings, the Two-Tower model, MLflow tracking and plots.
+# Installs the runtime deps too.
+-r requirements.txt
+torch>=2.2
+transformers>=4.40
+sentence-transformers>=2.7
+matplotlib>=3.8
+mlflow>=2.12

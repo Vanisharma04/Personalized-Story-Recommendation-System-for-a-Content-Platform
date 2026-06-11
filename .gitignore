@@ -6,21 +6,27 @@ __pycache__/
 .venv/
 venv/
 
-# --- Generated artifacts (recreate with: python pipeline.py) ---
+# --- Generated artifacts: ignore everything by default ... ---
 data/raw/*
-!data/raw/.gitkeep
 data/processed/*
-!data/processed/.gitkeep
 models/*
-!models/.gitkeep
 faiss_index/*
-!faiss_index/.gitkeep
 reports/*
-!reports/.gitkeep
-
-# --- Experiment tracking ---
 mlflow.db
 mlruns/
+
+# --- ... but commit the small artifacts the deployed app needs to serve.
+#     (Regenerate any of these with: python pipeline.py) ---
+!data/raw/stories.csv
+!data/raw/users.csv
+!data/processed/train.parquet
+!data/processed/user_tower_vectors.npy
+!data/processed/user_index.csv
+!data/processed/story_index.csv
+!faiss_index/stories.index
+!models/ranker.pkl
+!reports/*.json
+!**/.gitkeep
 
 # --- OS ---
 .DS_Store

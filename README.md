@@ -66,14 +66,19 @@ importance, and the two-tower training curve.
 
 ## Quickstart
 
+The repo ships with the trained artifacts, so the dashboard runs immediately:
+
 ```bash
-pip install -r requirements.txt
-
-# 1. Train everything (dataset → embeddings → two-tower → FAISS → ranker → eval)
-python pipeline.py
-
-# 2. Launch the dashboard
+pip install -r requirements.txt      # light runtime deps (no torch needed)
 streamlit run dashboard/app.py
+```
+
+To **retrain everything from scratch** (regenerates the dataset, embeddings,
+Two-Tower model, FAISS index, ranker and metrics):
+
+```bash
+pip install -r requirements-train.txt   # adds torch, sentence-transformers, …
+python pipeline.py
 ```
 
 Resume from any step, e.g. retrain only the ranker and re-evaluate:
@@ -94,6 +99,22 @@ mlflow ui --backend-store-uri sqlite:///mlflow.db
 docker build -t storyrec .
 docker run -p 8501:8501 storyrec     # dashboard at http://localhost:8501
 ```
+
+## Deploy a public link (free)
+
+The app is ready for **[Streamlit Community Cloud](https://share.streamlit.io)** —
+it serves from the committed artifacts, so no training runs in the cloud:
+
+1. Sign in to <https://share.streamlit.io> with the GitHub account that owns this repo.
+2. **Create app → from existing repo**, then set:
+   - **Repository:** this repo · **Branch:** `main`
+   - **Main file path:** `dashboard/app.py`
+   - **Advanced → Python version:** `3.11`
+3. **Deploy.** First build takes a minute; afterwards every `git push` redeploys.
+
+You get a public `https://<your-app>.streamlit.app` link anyone can open.
+`requirements.txt` is kept torch-free and `packages.txt` installs `libgomp1`,
+so the app stays within the free tier's memory.
 
 ## Dataset
 
