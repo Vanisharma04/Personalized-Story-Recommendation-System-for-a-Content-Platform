@@ -8,6 +8,10 @@ and final recommendations are ordered by a **LightGBM Learning-to-Rank** model
 — all evaluated with standard ranking metrics and served through an
 interactive **Streamlit dashboard**.
 
+<p align="center">
+  <img src="docs/dashboard-home.png" alt="StoryRec dashboard — home" width="100%">
+</p>
+
 ```
                 ┌─────────────────────────  STAGE 1: RETRIEVAL  ─────────────────────────┐
  story text ──► Sentence Transformer ──► Item Tower ──► FAISS index ─┐
@@ -38,6 +42,27 @@ interactive **Streamlit dashboard**.
   so the ranking stage's lift is visible.
 - **MLflow tracking** (SQLite backend), **Dockerized** deployment, and a
   themed **Streamlit dashboard** with live recommendations and analytics.
+
+## The Dashboard
+
+An editorial "fine library" interface — ivory paper, antique gold, classic
+serif typography — across three pages.
+
+**Reading Room** — live, two-stage recommendations as gilded book-plate cards
+(FAISS retrieval → LightGBM ranking), with each reader's history and the
+retrieval affinity behind every chosen title.
+
+<p align="center">
+  <img src="docs/dashboard-recommendations.png" alt="StoryRec — live recommendations" width="100%">
+</p>
+
+**The Ledger** — offline evaluation and analytics: ranking-stage lift, quality
+by genre, the engagement landscape, reading activity over time, ranker feature
+importance, and the two-tower training curve.
+
+<p align="center">
+  <img src="docs/dashboard-analytics.png" alt="StoryRec — analytics & evaluation" width="100%">
+</p>
 
 ## Quickstart
 
