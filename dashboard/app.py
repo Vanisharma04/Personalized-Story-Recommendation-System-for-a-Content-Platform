@@ -1,4 +1,4 @@
-"""StoryRec — an editorial, premium dashboard for the recommendation engine.
+"""Ex Libris — an editorial, premium dashboard for the recommendation engine.
 
 A "fine library" aesthetic: ivory paper, antique gold & burgundy, classic
 serif typography, gilded book-plate recommendation cards, and a custom light
@@ -23,7 +23,7 @@ from src import config
 from src.recommender import Recommender
 
 st.set_page_config(
-    page_title="StoryRec · A Curated Reading Companion",
+    page_title="Ex Libris · A Curated Reading Companion",
     page_icon="📖",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -304,7 +304,7 @@ def page_home():
     st.markdown("""
     <div class="hero">
       <div class="hero-eyebrow">Personalized Story Discovery</div>
-      <div class="hero-title">Story<span class="amp">Rec</span></div>
+      <div class="hero-title">Ex <span class="amp">Libris</span></div>
       <div class="fleuron">❧&nbsp;&nbsp;✦&nbsp;&nbsp;❧</div>
       <div class="hero-sub">A curated reading companion — where transformer-read prose
       meets a two-stage engine that learns each reader's quiet preferences.</div>
@@ -539,7 +539,7 @@ pages = st.navigation([
 ])
 with st.sidebar:
     st.markdown(
-        '<div class="brand"><div class="brand-mark">Story<span class="dot">Rec</span></div>'
+        '<div class="brand"><div class="brand-mark">Ex <span class="dot">Libris</span></div>'
         '<div class="brand-tag">a curated reading companion</div></div>'
         '<div class="brand-rule"></div>', unsafe_allow_html=True)
     st.markdown(

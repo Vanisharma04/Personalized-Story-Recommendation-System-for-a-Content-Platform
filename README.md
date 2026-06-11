@@ -1,4 +1,7 @@
-# 📚 StoryRec — Personalized Content Recommendation & Ranking Engine
+# 📖 Ex Libris — Personalized Story Recommendation & Ranking Engine
+
+> *Ex Libris* — “from the library of —”, the inscription on a personalized
+> bookplate. A library curated for every reader.
 
 A production-style, end-to-end **two-stage recommendation system** for a
 story-reading platform (think Pratilipi / Medium / Wattpad). Stories are
@@ -9,7 +12,7 @@ and final recommendations are ordered by a **LightGBM Learning-to-Rank** model
 interactive **Streamlit dashboard**.
 
 <p align="center">
-  <img src="docs/dashboard-home.png" alt="StoryRec dashboard — home" width="100%">
+  <img src="docs/dashboard-home.png" alt="Ex Libris dashboard — home" width="100%">
 </p>
 
 ```
@@ -53,7 +56,7 @@ serif typography — across three pages.
 retrieval affinity behind every chosen title.
 
 <p align="center">
-  <img src="docs/dashboard-recommendations.png" alt="StoryRec — live recommendations" width="100%">
+  <img src="docs/dashboard-recommendations.png" alt="Ex Libris — live recommendations" width="100%">
 </p>
 
 **The Ledger** — offline evaluation and analytics: ranking-stage lift, quality
@@ -61,7 +64,7 @@ by genre, the engagement landscape, reading activity over time, ranker feature
 importance, and the two-tower training curve.
 
 <p align="center">
-  <img src="docs/dashboard-analytics.png" alt="StoryRec — analytics & evaluation" width="100%">
+  <img src="docs/dashboard-analytics.png" alt="Ex Libris — analytics & evaluation" width="100%">
 </p>
 
 ## Quickstart
