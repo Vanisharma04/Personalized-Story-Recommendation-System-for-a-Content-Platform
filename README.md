@@ -1,4 +1,9 @@
-# 📖 Ex Libris — Personalized Story Recommendation & Ranking Engine
+<p align="center">
+  <img src="docs/banner.png" alt="Ex Libris — Personalized Story Recommendation Engine" width="100%">
+</p>
+
+<h1 align="center">Ex Libris</h1>
+<p align="center"><i>Personalized Story Recommendation &amp; Ranking Engine</i></p>
 
 > *Ex Libris* — “from the library of —”, the inscription on a personalized
 > bookplate. A library curated for every reader.
